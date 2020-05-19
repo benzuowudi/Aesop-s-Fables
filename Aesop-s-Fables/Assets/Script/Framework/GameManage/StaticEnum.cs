@@ -23,3 +23,13 @@ public enum Camp
 {
 
 }
+
+public enum Eva
+{
+    SSS,
+    SS,
+    S,
+    A,
+    B,
+    C,
+}

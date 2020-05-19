@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
 
     public void InitManager()
     {
-        m_UIManager.Init(m_ModuleManager, m_Canvas);
+        m_UIManager.Init(m_ModuleManager, m_ControllerManager, m_Canvas);
         m_ControllerManager.InitController(m_ModuleManager);
     }
 

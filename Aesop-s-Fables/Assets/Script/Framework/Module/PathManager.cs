@@ -21,25 +21,25 @@ public class PathManager
 
     public string ReturnPath(ResourcsePath _rPath)
     {
-        string kPath = _rPath.ToString();
+        string kPath = _rPath.ToString() + "/";
         return kPath;
     }
 
     public string ReturnPath(ResourcsePath _rPath, PrefabPath _pPath)
     {
-        string kPath = _rPath.ToString() + _pPath.ToString();
+        string kPath = _rPath.ToString() + "/" + _pPath.ToString() + "/";
         return kPath;
     }
 
     public string ReturnPath(ResourcsePath _rPath, string _name)
     {
-        string kPath = _rPath.ToString() + _name;
+        string kPath = _rPath.ToString() + "/" + _name;
         return kPath;
     }
 
-    public string ReturnPath(ResourcsePath _rPath, PrefabPath _pPath,string _name)
+    public string ReturnPath(ResourcsePath _rPath, PrefabPath _pPath, string _name)
     {
-        string kPath = _rPath.ToString() + _pPath.ToString() + _name;
+        string kPath = _rPath.ToString() + "/" + _pPath.ToString() + "/" + _name;
         return kPath;
     }
 }

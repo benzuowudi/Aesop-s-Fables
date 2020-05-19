@@ -21,7 +21,7 @@ public class PlayerWindow : UIWindow
 
         m_PlayerDataBox.InitPlayerData(this);
         m_WeaponBox.InitWeapon(this);
-        m_ChapterBox.InitChapter(this);
+        m_ChapterBox.InitChapter(this, GetModule<PlayerModule>().GetChapterData(), GetModule<PlayerModule>().GetChapterList());
         m_RolesBox.InitRoles(this);
     }
 

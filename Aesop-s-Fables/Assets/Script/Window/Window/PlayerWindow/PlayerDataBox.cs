@@ -11,7 +11,7 @@ public class PlayerDataBox : MonoBehaviour
     public Button m_RolesButton;
 
     public Image m_PlayerImage;
-    public Text m_Name;
+    public Text m_PlayerName;
     public Text m_Sex;
     public Text m_Camp;
     public Text m_Level;

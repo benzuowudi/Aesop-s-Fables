@@ -22,6 +22,6 @@ public class GameModule
 
     public T GetModule<T>() where T : GameModule
     {
-        return null;
+        return m_ModuleManager.GetModule<T>();
     }
 }

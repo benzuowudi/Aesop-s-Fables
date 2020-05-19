@@ -16,16 +16,18 @@ public class UIManager : MonoBehaviour
     private Canvas m_Canvas;
 
     private ModuleManager m_ModuleManager;
+    private ControllerManager m_ControllerManager;
 
     private UIWindow m_CurrentWindow = null;
     private UIName m_LastWindow = UIName.none;
     private Dictionary<UIName, UIWindow> m_UIWindowDic = new Dictionary<UIName, UIWindow>();
     public GameObject m_Window { get; set; }
 
-    public void Init(ModuleManager _moduleManager, Canvas _canvas)
+    public void Init(ModuleManager _moduleManager, ControllerManager _ctrlManager, Canvas _canvas)
     {
         m_Canvas = _canvas;
         m_ModuleManager = _moduleManager;
+        m_ControllerManager = _ctrlManager;
         UIWindow[] kUIWindows = Resources.FindObjectsOfTypeAll<UIWindow>();
         for (int i = 0; i < kUIWindows.Length; i++)
         {
@@ -76,6 +78,11 @@ public class UIManager : MonoBehaviour
 
     public T GetModule<T>() where T : GameModule
     {
-         return m_ModuleManager.GetModule<T>();
+        return m_ModuleManager.GetModule<T>();
+    }
+
+    public T GetCtrl<T>() where T : GameControlle
+    {
+        return m_ControllerManager.GetCtrl<T>();
     }
 }

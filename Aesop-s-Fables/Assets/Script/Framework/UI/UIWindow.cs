@@ -45,6 +45,11 @@ public class UIWindow : MonoBehaviour
         return GameManager.m_UIManager.GetModule<T>();
     }
 
+    public T GetCtrl<T>() where T : GameControlle
+    {
+        return GameManager.m_UIManager.GetCtrl<T>();
+    }
+
     public PathManager GetPath()
     {
         return GameManager.m_PathManager;

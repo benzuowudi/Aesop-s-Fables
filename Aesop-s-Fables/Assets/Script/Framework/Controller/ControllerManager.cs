@@ -41,4 +41,11 @@ public class ControllerManager
         T kController = new T();
         m_ControllerDic.Add(typeof(T), kController);
     }
+
+    public T GetCtrl<T>() where T : GameControlle
+    {
+        GameControlle kCtrl = null;
+        m_ControllerDic.TryGetValue(typeof(T), out kCtrl);
+        return kCtrl as T;
+    }
 }
