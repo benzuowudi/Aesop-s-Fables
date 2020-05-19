@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aesop's Fables", "Aesop's Fables.csproj", "{628BC7D3-1DF6-1CE9-DD3E-53B4A31CBDEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{628BC7D3-1DF6-1CE9-DD3E-53B4A31CBDEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{628BC7D3-1DF6-1CE9-DD3E-53B4A31CBDEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{628BC7D3-1DF6-1CE9-DD3E-53B4A31CBDEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{628BC7D3-1DF6-1CE9-DD3E-53B4A31CBDEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
