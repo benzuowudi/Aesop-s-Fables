@@ -5,8 +5,9 @@ using UnityEngine;
 public class PlayerModule : GameModule
 {
     private PlayerData m_PlayerData;
-    private ChapterData m_ChapterData;
+    private CadeDate m_CadeData;
     private List<ChapterCellData> m_ChapterList = new List<ChapterCellData>();
+    private List<RolesCellData> m_RolesList = new List<RolesCellData>();
 
     public override IEnumerator InitEvent()
     {
@@ -20,17 +21,56 @@ public class PlayerModule : GameModule
 
     public PlayerData GetPlayerData()
     {
+        if (m_PlayerData == null)
+        {
+            return null;
+        }
         return m_PlayerData;
     }
 
-    public ChapterData GetChapterData()
+    public CadeDate GetCadeData()
     {
-        return m_ChapterData;
+        if (m_CadeData == null)
+        {
+            return null;
+        }
+        return m_CadeData;
+    }
+
+    public ChapterCellData GetChapterCellDataByID(int _index)
+    {
+        if (_index >= m_ChapterList.Count)
+        {
+            return null;
+        }
+        return m_ChapterList[_index];
     }
 
     public List<ChapterCellData> GetChapterList()
     {
+        if (m_ChapterList.Count == 0)
+        {
+            return null;
+        }
         return m_ChapterList;
+    }
+
+    public RolesCellData GetRoleDataByID(int _index)
+    {
+        if (_index >= m_RolesList.Count)
+        {
+            return null;
+        }
+        return m_RolesList[_index];
+    }
+
+    public List<RolesCellData> GetRoles()
+    {
+        if (m_RolesList.Count == 0)
+        {
+            return null;
+        }
+        return m_RolesList;
     }
 }
 
@@ -60,12 +100,12 @@ public class PlayerData
     }
 }
 
-public class ChapterData
+public class CadeDate
 {
     public string m_Path = "";
     public float m_Height = 0;
     public float m_Gap = 0;
-    public ChapterData(string _path, float _height, float _gap)
+    public CadeDate(string _path, float _height, float _gap)
     {
         m_Path = _path;
         m_Height = _height;
@@ -94,5 +134,23 @@ public class ChapterCellData
         m_ChapterEva = _cEva;
         m_Minute = _m;
         m_Scend = _s;
+    }
+}
+
+public class RolesCellData
+{
+    public string m_Path = "";
+    public string m_RoleName = "";
+    public string m_RoleCamp = "";
+    public string m_RoleTitle = "";
+    public string m_RoleDes = "";
+
+    public RolesCellData(string _path, string _name, string _camp, string _title, string _des)
+    {
+        m_Path = _path;
+        m_RoleName = _name;
+        m_RoleCamp = _camp;
+        m_RoleTitle = _title;
+        m_RoleDes = _des;
     }
 }

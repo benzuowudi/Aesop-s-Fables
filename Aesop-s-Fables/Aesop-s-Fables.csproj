@@ -51,31 +51,31 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>D:/unity 5.6.6/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>D:/SoftWare/Unity 5.6.6f2/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/unity 5.6.6/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/SoftWare/Unity 5.6.6f2/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
-      <HintPath>D:/unity 5.6.6/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+      <HintPath>D:/SoftWare/Unity 5.6.6f2/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-      <HintPath>D:/unity 5.6.6/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+      <HintPath>D:/SoftWare/Unity 5.6.6f2/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>D:/unity 5.6.6/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>D:/SoftWare/Unity 5.6.6f2/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
-      <HintPath>D:/unity 5.6.6/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+      <HintPath>D:/SoftWare/Unity 5.6.6f2/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.HoloLens">
-      <HintPath>D:/unity 5.6.6/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+      <HintPath>D:/SoftWare/Unity 5.6.6f2/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VR">
-      <HintPath>D:/unity 5.6.6/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+      <HintPath>D:/SoftWare/Unity 5.6.6f2/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>D:/unity 5.6.6/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>D:/SoftWare/Unity 5.6.6f2/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -95,10 +95,15 @@
     <Compile Include="Assets\Script\Framework\UI\UIManager.cs" />
     <Compile Include="Assets\Script\Framework\UI\UIName.cs" />
     <Compile Include="Assets\Script\Framework\UI\UIWindow.cs" />
+    <Compile Include="Assets\Script\Framework\XML\XMLManager.cs" />
     <Compile Include="Assets\Script\Module\PlayerModule\PlayerModule.cs" />
     <Compile Include="Assets\Script\Window\Cade\ChapterCade.cs" />
+    <Compile Include="Assets\Script\Window\Cade\MainChapterCade.cs" />
+    <Compile Include="Assets\Script\Window\Cade\RoleCade.cs" />
     <Compile Include="Assets\Script\Window\Window\BackageWindow\BackageWindow.cs" />
+    <Compile Include="Assets\Script\Window\Window\FightWindow\FightChangeBox.cs" />
     <Compile Include="Assets\Script\Window\Window\FightWindow\FightWindow.cs" />
+    <Compile Include="Assets\Script\Window\Window\FightWindow\MainChapterBox.cs" />
     <Compile Include="Assets\Script\Window\Window\LotteryTicketWindow\LotteryTicketWindow.cs" />
     <Compile Include="Assets\Script\Window\Window\MainWindow\MainWindow.cs" />
     <Compile Include="Assets\Script\Window\Window\PlayerWindow\ChapterBox.cs" />
@@ -109,6 +114,10 @@
     <Compile Include="Assets\Script\Window\Window\RolesWindow\RolesWindow.cs" />
     <Compile Include="Assets\Script\Window\Window\RoomWindow\RoomWindow.cs" />
     <Compile Include="Assets\Script\Window\Window\ShopWindow\ShopWindow.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Resources\XML\ChpaterData.xml" />
+    <None Include="Assets\Resources\XML\RolesData.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public static UIManager m_UIManager;
     public static ControllerManager m_ControllerManager;
     public static PathManager m_PathManager;
+    public static XMLManager m_XMLManager;
 
     public Canvas m_Canvas;
 
@@ -17,6 +18,7 @@ public class GameManager : MonoBehaviour
         m_UIManager = UIManager.GetInstance();
         m_ControllerManager = ControllerManager.GetInstance();
         m_PathManager = PathManager.GetInstance();
+        m_XMLManager = XMLManager.GetInstance();
         InitManager();
         StartGame();
     }

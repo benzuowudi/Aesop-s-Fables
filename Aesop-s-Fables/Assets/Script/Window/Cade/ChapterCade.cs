@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class ChapterCade : MonoBehaviour
 {
+    public Image m_ChapterImage;
     public Text m_ChapterText;
     public Text m_ChapterName;
     public Text m_ChapterDes;

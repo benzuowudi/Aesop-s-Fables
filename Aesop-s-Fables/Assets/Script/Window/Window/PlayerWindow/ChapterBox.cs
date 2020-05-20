@@ -9,7 +9,7 @@ public class ChapterBox : MonoBehaviour
     public Transform m_Content;
     public List<ChapterCade> m_ChapterList = new List<ChapterCade>();
     public Button m_BackButton;
-    public void InitChapter(PlayerWindow _window, ChapterData _data, List<ChapterCellData> _cadeList)
+    public void InitChapter(PlayerWindow _window, CadeDate _data, List<ChapterCellData> _cadeList)
     {
         m_PlayerWindow = _window;
         int kCellH = (int)_data.m_Height + (int)_data.m_Gap;

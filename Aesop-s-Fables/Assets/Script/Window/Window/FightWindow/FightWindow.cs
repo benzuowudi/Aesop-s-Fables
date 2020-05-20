@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class FightWindow : UIWindow
 {
+    public FightChangeBox m_FightChangeBox;
     public Button m_BackButton;
     public Button m_HomeButton;
 
